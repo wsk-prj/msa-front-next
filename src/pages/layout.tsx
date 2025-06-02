@@ -16,10 +16,10 @@ const geistMono = Geist_Mono({
 export default function Layout({ children }: { children: ReactNode }) {
   return (
     <div
-      className={`${geistSans.className} ${geistMono.className} flex flex-col items-center justify-items-center min-h-screen font-[family-name:var(--font-geist-sans)]`}
+      className={`${geistSans.className} ${geistMono.className} flex flex-col items-center justify-center min-h-screen font-[family-name:var(--font-geist-sans)]`}
     >
       <Header />
-      <main className="flex-grow w-full bg-neutral-50 p-4">{children}</main>
+      <main className="flex-grow flex flex-col w-full bg-neutral-50 p-4">{children}</main>
       <Footer />
     </div>
   );
